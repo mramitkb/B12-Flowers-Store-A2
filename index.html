@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers Store</title>
+    <script src="https://kit.fontawesome.com/26dbb3e3fe.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +19,24 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="max-w-7xl mx-auto px-5 lg:px-0">
         <!-- Navbar Section -->
-        <nav>
-
+        <nav class="flex items-center justify-between mt-7">
+            <img class="w-fit" src="./resources/assets/logo.png" alt="">
+            <ul class="flex items-center justify-around w-1/2 text-gray-700">
+                <li class="hidden md:block hover:text-black"><a href="">Home</a></li>
+                <li class="hidden hover:text-black md:block"><a href="">Shop</a></li>
+                <li class="hidden hover:text-black md:block"><a href="">About Us</a></li>
+                <li class="hover:text-black"><a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+            </ul>
         </nav>
         <!-- Banner Section -->
-        <div>
-
+        <div class="my-32 flex flex-col-reverse md:flex-row items-end justify-center gap-10 md:gap-0">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-black text-2xl md:text-[4rem] noto font-bold">ALWAYS <span class="noto text-[#E95A08]">FRESH <br>FLOWERS</span></h1>
+                <p class="text-sm md:text-base text-[#7A7C80]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+            </div>
+            <img class="w-full md:w-1/2" src="./resources/assets/hero-flower.png" alt="">
         </div>
     </header>
     <main>
